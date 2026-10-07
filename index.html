@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Three.js Animated Man</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #202020;
+        }
+
+        #buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            z-index: 10;
+            justify-content: center;
+            width: 90%;
+        }
+
+        button {
+            padding: 10px 16px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <div id="buttons">
+        <button id="idleButton">Idle</button>
+        <button id="walkButton">Walk</button>
+        <button id="runButton">Run</button>
+        <button id="jumpButton">Jump</button>
+        <button id="clapButton">Clap</button>
+        <button id="punchButton">Punch</button>
+        <button id="deathButton">Death</button>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
